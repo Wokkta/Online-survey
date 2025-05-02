@@ -1,0 +1,80 @@
+.survey-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.survey-container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.survey-progress-bar {
+  height: 8px;
+  background-color: #eee;
+  border-radius: 4px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.survey-progress-fill {
+  height: 100%;
+  background-color: #2196f3;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.survey-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2196f3;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.survey-button:disabled {
+  background-color: #ccc;
+}
+
+.survey-button:hover:not(:disabled) {
+  background-color: #1976d2;
+}
+
+label {
+  display: block;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+label:hover {
+  background-color: #f1f1f1;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .survey-container {
+    padding: 16px;
+  }
+
+  .survey-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
